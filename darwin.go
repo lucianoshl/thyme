@@ -47,7 +47,7 @@ repeat with proc in listOfProcesses
   log "PROCESS " & procID & ":" & procName
   -- Attempt to list windows if the process is scriptable
   try
-    tell application procName
+    tell application procID
       repeat with i from 1 to (count windows)
         log "WINDOW " & (id of window i) & ":" & (name of window i) as string
       end repeat
@@ -62,7 +62,7 @@ end tell
 
 set procName to (name of proc)
 try
-  tell application procName
+  tell application procID
      log "WINDOW " & (id of window 1) & ":" & (name of window 1)
   end tell
 on error e
