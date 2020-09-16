@@ -8,7 +8,7 @@ import (
 	"runtime"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/sourcegraph/thyme"
+	"github.com/lucianoshl/thyme"
 )
 
 var CLI = flags.NewNamedParser("thyme", flags.PrintErrors|flags.PassDoubleDash)
