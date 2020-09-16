@@ -60,9 +60,9 @@ tell application "System Events"
      set proc to (first application process whose frontmost is true)
 end tell
 
-set procName to (name of proc)
+set procId to (id of proc)
 try
-  tell application procName
+  tell application procId
      log "WINDOW " & (id of window 1) & ":" & (name of window 1)
   end tell
 on error e
