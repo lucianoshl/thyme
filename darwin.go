@@ -62,7 +62,7 @@ end tell
 
 set procName to (name of proc)
 try
-  tell application procID
+  tell application procName
      log "WINDOW " & (id of window 1) & ":" & (name of window 1)
   end tell
 on error e
